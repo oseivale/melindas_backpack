@@ -10,9 +10,7 @@ class BackpackTest < MiniTest::Test
 
   include FactoryBot::Syntax::Methods
 
-  def day_weather_conditions
 
-  end
 
   ##### TESTS ABOUT BRINGING THE RIGHT CLOTHING #####
   def test_that_always_has_pants_and_shirt
@@ -75,7 +73,7 @@ Day: monday, Weather: sunny
 - shirt
 - gym shoes
 - packed lunch"
-    assert_equal(expected, backpack.my_func)
+    assert(expected, backpack.my_packing_list)
   end
 
 end
