@@ -10,6 +10,10 @@ class BackpackTest < MiniTest::Test
 
   include FactoryBot::Syntax::Methods
 
+  def day_weather_conditions
+
+  end
+
   ##### TESTS ABOUT BRINGING THE RIGHT CLOTHING #####
   def test_that_always_has_pants_and_shirt
     backpack = build(:backpack)
